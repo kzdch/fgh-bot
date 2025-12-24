@@ -3,9 +3,11 @@
   "version": "1.0.0",
   "description": "Terraria Discord Bot",
   "main": "index.js",
-  "scripts": {
-    "start": "node index.js"
-  },
+ "scripts": {
+  "start": "node index.js",
+  "postinstall": "npx playwright install --with-deps"
+}
+
   "dependencies": {
     "discord.js": "^14.14.0",
     "dotenv": "^16.3.1",
