@@ -30,7 +30,11 @@ client.on("messageCreate", async (message) => {
   if (message.content === "!start") {
     await message.reply("🟢 Terraria サーバーを起動します…");
 
-    const browser = await chromium.launch({ headless: true }); // Render では headless 推奨
+    const browser = await chromium.launch({
+    headless: true,       // GUI が無いので必ず true
+    args: ['--no-sandbox'] // Render 上で必要
+});
+
     const page = await browser.newPage();
 
     try {
