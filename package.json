@@ -1,15 +1,15 @@
 {
   "name": "fgh-bot",
   "version": "1.0.0",
+  "description": "Discord bot for Terraria server",
   "main": "index.js",
   "scripts": {
-  "start": "node index.js",
-  "postinstall": "PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD=1 npx playwright install --with-deps"
-}
-
+    "start": "node index.js",
+    "postinstall": "npx playwright install chromium"
+  },
   "dependencies": {
-    "discord.js": "^14.15.3",
-    "playwright": "^1.45.0",
-    "dotenv": "^16.4.5"
+    "discord.js": "^14.12.0",
+    "playwright": "^1.40.0",
+    "dotenv": "^16.3.1"
   }
 }
