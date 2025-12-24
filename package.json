@@ -3,9 +3,10 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "postinstall": "PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD=0 npx playwright install chromium"
-  },
+  "start": "node index.js",
+  "postinstall": "PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD=1 npx playwright install --with-deps"
+}
+
   "dependencies": {
     "discord.js": "^14.15.3",
     "playwright": "^1.45.0",
