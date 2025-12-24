@@ -1,20 +1,14 @@
 {
-  "dependencies": {
-    "discord.js": "^14.25.1",
-    "dotenv": "^17.2.3",
-    "playwright": "^1.57.0"
-  },
-  "name": "g4f-bot",
+  "name": "gfh-bot",
   "version": "1.0.0",
-  "description": "",
+  "description": "Terraria Discord Bot",
   "main": "index.js",
   "scripts": {
-  "start": "node index.js"
-}
-
+    "start": "node index.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs"
+  "dependencies": {
+    "discord.js": "^14.14.0",
+    "dotenv": "^16.3.1",
+    "playwright": "^1.38.0"
+  }
 }
