@@ -1,16 +1,14 @@
 {
-  "name": "gfh-bot",
+  "name": "fgh-bot",
   "version": "1.0.0",
-  "description": "Terraria Discord Bot",
   "main": "index.js",
- "scripts": {
-  "start": "node index.js",
-  "postinstall": "npx playwright install --with-deps"
-}
-
+  "scripts": {
+    "start": "node index.js",
+    "postinstall": "npx playwright install chromium"
+  },
   "dependencies": {
-    "discord.js": "^14.14.0",
-    "dotenv": "^16.3.1",
-    "playwright": "^1.38.0"
+    "discord.js": "^14.15.3",
+    "playwright": "^1.45.0",
+    "dotenv": "^16.4.5"
   }
 }
