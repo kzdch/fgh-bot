@@ -31,9 +31,10 @@ client.on("messageCreate", async (message) => {
     await message.reply("🟢 Terraria サーバーを起動します…");
 
     const browser = await chromium.launch({
-    headless: true, // Render では GUI は不要なので true
-    args: ['--no-sandbox', '--disable-setuid-sandbox'] // サンドボックス無効化は Render 上で必須
+  headless: true,
+  args: ['--no-sandbox', '--disable-setuid-sandbox']
 });
+
 
 
 
